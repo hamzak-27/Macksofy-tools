@@ -24,7 +24,7 @@ nest_asyncio.apply()
 
 
 # Set up LlamaParse
-os.environ["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]
+os.environ["OPENAI_API_KEY"] = st.secrets["general"]["OPENAI_API_KEY"]
 
 # Set up LlamaParse
 llama_parser = LlamaParse(api_key=st.secrets["LLAMA_CLOUD_API_KEY"], result_type="text")
